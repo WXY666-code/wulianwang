@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "*.json": "c",
+        "*.html": "bat",
+        "app_system_info.h": "c",
+        "reset_netcfg.h": "c",
+        "assert.h": "c",
+        "app_weather.h": "c",
+        "tuya_config.h": "c",
+        "app_display.h": "c",
+        "stdio.h": "c",
+        "string.h": "c",
+        "lang_config.h": "c",
+        "app_chat_bot.h": "c"
+    }
+}

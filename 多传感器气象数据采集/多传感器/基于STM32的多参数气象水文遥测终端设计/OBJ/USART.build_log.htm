@@ -1,0 +1,213 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a 530087351@qq.com, a, LIC=MPPLD-8IIQT-ARUXW-QGM3I-0CQLP-NCJZJ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\keil 5 MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+C:\Users\53008\Downloads\多传感器测距参考资料\基于STM32的多参数气象水文遥测终端设计 (最终版，非modbus，Kalman，低功耗)\基于STM32的多参数气象水文遥测终端设计\USER\USART.uvprojx
+Project File Date:  07/14/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\keil 5 MDK\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling OLED.c...
+compiling BC26.c...
+..\HARDWARE\BC26\BC26.c(10): error:  #20: identifier "BUFLEN" is undefined
+  char atstr[BUFLEN];
+..\HARDWARE\BC26\BC26.c(36): error:  #20: identifier "buf_uart3" is undefined
+      buf_uart3.index=0;
+..\HARDWARE\BC26\BC26.c(46): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr("ATi\r\n");
+..\HARDWARE\BC26\BC26.c(50): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"OK");//返回OK
+..\HARDWARE\BC26\BC26.c(155): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr("AT+CGPADDR=1\r\n");//激活场景
+..\HARDWARE\BC26\BC26.c(163): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"+CGATT: 1");//注册上网络信息
+..\HARDWARE\BC26\BC26.c(188): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr("AT+QMTDISC=0\r\n");//Disconnect a client from MQTT server
+..\HARDWARE\BC26\BC26.c(201): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"OK");//返OK
+..\HARDWARE\BC26\BC26.c(186): warning:  #550-D: variable "BC20_IMEI"  was set but never used
+      u8  BC20_IMEI[20],i;//IMEI值
+..\HARDWARE\BC26\BC26.c(314): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr(atstr);//输入IMEI,LWM2M协议要求填入IMEI信息
+..\HARDWARE\BC26\BC26.c(316): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"+QMTPUB: 0,1,0");//返SEND OK
+..\HARDWARE\BC26\BC26.c(329): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr(atstr);//输入IMEI,LWM2M协议要求填入IMEI信息
+..\HARDWARE\BC26\BC26.c(331): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"+QMTPUB: 0,1,0");//返SEND OK
+..\HARDWARE\BC26\BC26.c(344): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr(atstr);//输入IMEI,LWM2M协议要求填入IMEI信息
+..\HARDWARE\BC26\BC26.c(346): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"+QMTPUB: 0,1,0");//返SEND OK
+..\HARDWARE\BC26\BC26.c(360): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr(atstr);//输入IMEI,LWM2M协议要求填入IMEI信息
+..\HARDWARE\BC26\BC26.c(362): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"+QMTPUB: 0,1,0");//返SEND OK
+..\HARDWARE\BC26\BC26.c(375): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr(atstr);//输入IMEI,LWM2M协议要求填入IMEI信息
+..\HARDWARE\BC26\BC26.c(377): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"+QMTPUB: 0,1,0");//返SEND OK
+..\HARDWARE\BC26\BC26.c(390): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr(atstr);//输入IMEI,LWM2M协议要求填入IMEI信息
+..\HARDWARE\BC26\BC26.c(392): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"+QMTPUB: 0,1,0");//返SEND OK
+..\HARDWARE\BC26\BC26.c(405): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr(atstr);//输入IMEI,LWM2M协议要求填入IMEI信息
+..\HARDWARE\BC26\BC26.c(407): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"+QMTPUB: 0,1,0");//返SEND OK
+..\HARDWARE\BC26\BC26.c(420): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr(atstr);//输入IMEI,LWM2M协议要求填入IMEI信息
+..\HARDWARE\BC26\BC26.c(422): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"+QMTPUB: 0,1,0");//返SEND OK
+..\HARDWARE\BC26\BC26.c(435): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr(atstr);//输入IMEI,LWM2M协议要求填入IMEI信息
+..\HARDWARE\BC26\BC26.c(437): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"+QMTPUB: 0,1,0");//返SEND OK
+..\HARDWARE\BC26\BC26.c(450): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr(atstr);//输入IMEI,LWM2M协议要求填入IMEI信息
+..\HARDWARE\BC26\BC26.c(452): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"+QMTPUB: 0,1,0");//返SEND OK
+..\HARDWARE\BC26\BC26.c(465): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr(atstr);//输入IMEI,LWM2M协议要求填入IMEI信息
+..\HARDWARE\BC26\BC26.c(467): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"+QMTPUB: 0,1,0");//返SEND OK
+..\HARDWARE\BC26\BC26.c(480): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr(atstr);//输入IMEI,LWM2M协议要求填入IMEI信息
+..\HARDWARE\BC26\BC26.c(482): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"+QMTPUB: 0,1,0");//返SEND OK
+..\HARDWARE\BC26\BC26.c(495): warning:  #223-D: function "Uart3_SendStr" declared implicitly
+      Uart3_SendStr(atstr);//输入IMEI,LWM2M协议要求填入IMEI信息
+..\HARDWARE\BC26\BC26.c(497): error:  #20: identifier "buf_uart3" is undefined
+      strx=strstr((const char*)buf_uart3.buf,(const char*)"+QMTPUB: 0,1,0");//返SEND OK
+..\HARDWARE\BC26\BC26.c(577): error:  #20: identifier "buf_uart3" is undefined
+  	strx =strstr((char *)buf_uart3.buf,(char *)"params");
+..\HARDWARE\BC26\BC26.c: 17 warnings, 19 errors
+compiling led.c...
+compiling MMC_SD.C...
+compiling rs485.c...
+compiling system_stm32f10x.c...
+compiling modbus_crc.c...
+compiling modbus_timer.c...
+compiling CountSensor.c...
+compiling sd.c...
+compiling stm32f10x_it.c...
+compiling main.c...
+..\HARDWARE\HCSR04\HCSR04.h(12): warning:  #1295-D: Deprecated declaration HCSR04_Init - give arg types
+  void HCSR04_Init();
+..\HARDWARE\HCSR04\HCSR04.h(13): warning:  #1295-D: Deprecated declaration HCSR04_GetValue - give arg types
+  uint16_t HCSR04_GetValue();
+..\HARDWARE\HCSR04\HCSR04.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif 
+main.c(75): error:  #256: invalid redeclaration of type name "KalmanFilter"  (declared at line 13 of "..\USER\kalman.h")
+  } KalmanFilter;
+main.c(88): error:  #147-D: declaration is incompatible with "void KalmanFilter_Init(KalmanFilter *, double, double, double, double)"  (declared at line 17 of "..\USER\kalman.h")
+  void KalmanFilter_Init(KalmanFilter *kf, double init_x, double init_P, double Q, double R); 
+main.c(89): error:  #147-D: declaration is incompatible with "double KalmanFilter_Update(KalmanFilter *, double)"  (declared at line 19 of "..\USER\kalman.h")
+  double KalmanFilter_Update(KalmanFilter *kf, double z);
+main.c(182): error:  #20: identifier "HCSR04_DisTance" is undefined
+  HCSR04_DisTance HCSR04_distance = {0};
+main.c(200): warning:  #223-D: function "HCSR04_Start" declared implicitly
+  HCSR04_Start();
+main.c(268): error:  #20: identifier "HCSR04_Status" is undefined
+  if (HCSR04_Status & HCSR04_GETDATASUCCESSFUL)
+main.c(268): error:  #20: identifier "HCSR04_GETDATASUCCESSFUL" is undefined
+  if (HCSR04_Status & HCSR04_GETDATASUCCESSFUL)
+main.c(272): warning:  #223-D: function "HCSR04_GetDistance" declared implicitly
+  HCSR04_GetDistance(&HCSR04_distance); 
+main.c(239): warning:  #177-D: variable "var1"  was declared but never referenced
+  double var1, var2, var3; 
+main.c(239): warning:  #177-D: variable "var2"  was declared but never referenced
+  double var1, var2, var3; 
+main.c(239): warning:  #177-D: variable "var3"  was declared but never referenced
+  double var1, var2, var3; 
+main.c(366): warning:  #223-D: function "fabs" declared implicitly
+  	double diff1 = fabs(d1-d2) + fabs(d1-d3);
+main.c(432): warning:  #223-D: function "fabs" declared implicitly
+  double w1 = fabs(r1) > 1e-6 ? 1.0/(r1*r1 + 1e-6) : 1e6; 
+main.c: 10 warnings, 6 errors
+compiling modbus.c...
+compiling spi.c...
+compiling data.c...
+compiling Kalman.c...
+compiling HCSR04.c...
+..\HARDWARE\HCSR04\HCSR04.h(12): warning:  #1295-D: Deprecated declaration HCSR04_Init - give arg types
+  void HCSR04_Init();
+..\HARDWARE\HCSR04\HCSR04.h(13): warning:  #1295-D: Deprecated declaration HCSR04_GetValue - give arg types
+  uint16_t HCSR04_GetValue();
+..\HARDWARE\HCSR04\HCSR04.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\HARDWARE\HCSR04\HCSR04.c(31): warning:  #223-D: function "Delay_us" declared implicitly
+  	Delay_us(45);
+..\HARDWARE\HCSR04\HCSR04.c(39): warning:  #223-D: function "Delay_ms" declared implicitly
+  	Delay_ms(100);
+..\HARDWARE\HCSR04\HCSR04.c(41): warning:  #111-D: statement is unreachable
+  	return Time;
+..\HARDWARE\HCSR04\HCSR04.c: 6 warnings, 0 errors
+compiling Timer.c...
+compiling MyRTC.c...
+compiling sys.c...
+compiling misc.c...
+compiling delay.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_rcc.c...
+compiling core_cm3.c...
+compiling stm32f10x_tim.c...
+compiling ff.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling diskio.c...
+compiling malloc.c...
+compiling exfuns.c...
+"..\OBJ\USART.axf" - 25 Error(s), 33 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  D:\keil 5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:03:11
+</pre>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/tools/kconfiglib/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/common/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/libcjson/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/libhttp/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/liblvgl/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/liblwip/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/libmqtt/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/libtls/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/peripherals/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/peripherals/audio_codecs/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/peripherals/display/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/peripherals/touch/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/peripherals/encoder/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/peripherals/button/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/peripherals/led/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/tal_bluetooth/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/tal_cli/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/tal_driver/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/tal_kv/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/tal_network/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/tal_security/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/tal_system/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/tal_wifi/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/tal_wired/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/tuya_ai_basic/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/src/tuya_cloud_service/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/boards/T5AI/TUYA_T5AI_BOARD/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/apps/tuya.ai/your_chat_bot/src/display/cmake_install.cmake",
+		"C:/Users/wxy/TuyaOpen/apps/tuya.ai/your_chat_bot/.build/apps/tuya.ai/ai_components/ai_audio/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
